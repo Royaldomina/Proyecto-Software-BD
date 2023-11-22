@@ -1,0 +1,70 @@
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login\LoginBakebooker\bin\Debug\LoginBakebooker.exe.config
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login\LoginBakebooker\bin\Debug\LoginBakebooker.exe
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login\LoginBakebooker\bin\Debug\LoginBakebooker.pdb
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.AssemblyReference.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login\LoginBakebooker\obj\Debug\LoginBakebooker.Properties.Resources.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.GenerateResource.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.CoreCompileInputs.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login\LoginBakebooker\obj\Debug\LoginBakebooker.exe
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login\LoginBakebooker\obj\Debug\LoginBakebooker.pdb
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login\LoginBakebooker\obj\Debug\LoginBakebooker.Form1.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\bin\Debug\LoginBakebooker.exe.config
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\bin\Debug\LoginBakebooker.exe
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\bin\Debug\LoginBakebooker.pdb
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.AssemblyReference.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\obj\Debug\LoginBakebooker.Form1.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\obj\Debug\LoginBakebooker.Form2.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\obj\Debug\LoginBakebooker.Properties.Resources.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.GenerateResource.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.CoreCompileInputs.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\obj\Debug\LoginBakebooker.exe
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login - usuarios\LoginBakebooker\obj\Debug\LoginBakebooker.pdb
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\bin\Debug\LoginBakebooker.exe.config
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\bin\Debug\LoginBakebooker.exe
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\bin\Debug\LoginBakebooker.pdb
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.AssemblyReference.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\obj\Debug\LoginBakebooker.Form1.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\obj\Debug\LoginBakebooker.Form2.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\obj\Debug\LoginBakebooker.Properties.Resources.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.GenerateResource.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.CoreCompileInputs.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\obj\Debug\LoginBakebooker.exe
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - comunicacion entre forms\LoginBakebooker\obj\Debug\LoginBakebooker.pdb
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\bin\Debug\LoginBakebooker.exe.config
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\bin\Debug\LoginBakebooker.exe
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\bin\Debug\LoginBakebooker.pdb
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.AssemblyReference.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\obj\Debug\LoginBakebooker.Form1.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\obj\Debug\LoginBakebooker.Form2.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\obj\Debug\LoginBakebooker.Properties.Resources.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.GenerateResource.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.CoreCompileInputs.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\obj\Debug\LoginBakebooker.exe
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases\LoginBakebooker\obj\Debug\LoginBakebooker.pdb
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.AssemblyReference.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.Form1.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.Form2.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.Properties.Resources.resources
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.GenerateResource.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.CoreCompileInputs.cache
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.exe
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.pdb
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\bin\Debug\LoginBakebooker.exe.config
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\bin\Debug\LoginBakebooker.exe
+C:\Users\Tobal\Documents\Tec\5to semestre\Taller de base de datos\Unidad 3\Proyecto Final\Login con los datas - con clases - 2\LoginBakebooker\bin\Debug\LoginBakebooker.pdb
+D:\Descargas-SSD\Login con los datas - con clases - 2\LoginBakebooker\bin\Debug\LoginBakebooker.exe.config
+D:\Descargas-SSD\Login con los datas - con clases - 2\LoginBakebooker\bin\Debug\LoginBakebooker.exe
+D:\Descargas-SSD\Login con los datas - con clases - 2\LoginBakebooker\bin\Debug\LoginBakebooker.pdb
+D:\Descargas-SSD\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.AssemblyReference.cache
+D:\Descargas-SSD\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.Form1.resources
+D:\Descargas-SSD\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.Form2.resources
+D:\Descargas-SSD\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.Properties.Resources.resources
+D:\Descargas-SSD\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.GenerateResource.cache
+D:\Descargas-SSD\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.csproj.CoreCompileInputs.cache
+D:\Descargas-SSD\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.exe
+D:\Descargas-SSD\Login con los datas - con clases - 2\LoginBakebooker\obj\Debug\LoginBakebooker.pdb
