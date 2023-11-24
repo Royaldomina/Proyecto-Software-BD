@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Diagnostics.Contracts;
@@ -28,6 +30,10 @@ namespace LoginBakebooker
             this.usuario = usuario;
             this.contraseña = contraseña;
             this.connectionString= $"Data Source=IDEAPAD;Initial Catalog=BakeBooker;User ID={usuario};Password={contraseña}";
+            using (SqlConnection conexionrol = new SqlConnection(connectionString))
+            {
+                conexionrol.Open();              
+            }
             sqlConnection = new SqlConnection(connectionString);
             DgvGeneral.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             Refrescar();
@@ -36,12 +42,13 @@ namespace LoginBakebooker
         private void Refrescar()
         {
             string nombreTabla = ObtenerNombreTabla();
+            string ID = obtenerIDParaOrdenar();
             if (!string.IsNullOrEmpty(nombreTabla))
             {
                 try
                 {
                     sqlConnection.Open();
-                    MostrarDatos(nombreTabla);
+                    MostrarDatos(nombreTabla,ID);
                     sqlConnection.Close();
                 }
                 catch (Exception ex)
@@ -55,6 +62,28 @@ namespace LoginBakebooker
             Refrescar();
 
         }
+        private string obtenerIDParaOrdenar()
+        {
+            switch (tabControlBakeBooker.SelectedIndex)
+            {
+                case 0:
+                    return "ID_cliente";
+                case 1:
+                    return "ID_pedido";
+                case 2:
+                    return "ID_detalle";
+                case 3:
+                    return "ID_producto";
+                case 4:
+                    return "ID_PEDIDOPRODUCTO";
+                case 5:
+                    return "ID_inventario";
+                case 6:
+                    return "ID_empleado";
+                default:
+                    return null;
+            }
+        }
        
         private string ObtenerNombreTabla()
         {
@@ -62,32 +91,33 @@ namespace LoginBakebooker
             switch (tabControlBakeBooker.SelectedIndex)
             {
                 case 0:
-                    return "Cliente"; // Reemplaza con el nombre de tu tabla en el TabPage 1
+                    return "Cliente";
                 case 1:
-                    return "Empleado"; // Reemplaza con el nombre de tu tabla en el TabPage 2
+                    return "Pedido";
                 case 2:
-                    return "Producto"; // Reemplaza con el nombre de tu tabla en el TabPage 3
+                    return "Pedido_detalles"; 
                 case 3:
-                    return "Pedido"; // Reemplaza con el nombre de tu tabla en el TabPage 4
+                    return "Producto"; 
                 case 4:
-                    return "Pedido_detalles"; // Reemplaza con el nombre de tu tabla en el TabPage 5
+                    return "Pedido_Producto";
                 case 5:
                     return "Inventario";
+                case 6:
+                    return "Empleado";
                 default:
                     return null;
             }
         }
 
-        private void MostrarDatos(string nombreTabla)
+        private void MostrarDatos(string nombreTabla, string ID)
         {
             try
             {
-                string query = $"SELECT * FROM {nombreTabla}"; // Utiliza el nombre de la tabla proporcionado
+                string query = $"SELECT * FROM {nombreTabla} ORDER BY {ID} DESC"; // Utiliza el nombre de la tabla proporcionado
                 SqlCommand cmd = new SqlCommand(query, sqlConnection);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
-
 
                 DgvGeneral.DataSource = dataTable;
               
@@ -98,99 +128,6 @@ namespace LoginBakebooker
             }
         }
        
-        private void btnInsertar_C_Click(object sender, EventArgs e)
-        {
-            string nombre= txtNombre.Text;
-            string apellido=txtApellido.Text;
-            string calle=txt_calle_C.Text;
-            int numexterior=Convert.ToInt32(txt_NumeroExt_C.Text);
-            int? numinterior = null;
-            if (!string.IsNullOrEmpty(txtNumINT_C.Text))
-            {
-                // Intentar convertir el texto del TextBox a un número entero
-                if (int.TryParse(txtNumINT_C.Text, out int resultado))
-                {
-                    numinterior = resultado;
-                }
-                else
-                {
-                    MessageBox.Show("El campo de correo electrónico debe ser un número válido.");
-                    return;
-                }
-            }
-            string rfc = string.IsNullOrEmpty(txtRfc_C.Text) ? null : txtRfc_C.Text;
-            int telefono = Convert.ToInt32(txtTelefono_C.Text);
-            string correo=txtCorreo_Electronico_C.Text;
-
-
-            string query = "INSERT INTO Cliente (Nombre,Apellido,Calle,Numero_exterior,Numero_interior,Telefono,Correo_electronico,RFC) VALUES (@nombre,@apellido,@calle,@numexterior,@numinterior,@telefono,@correo,@rfc)";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            using (SqlCommand command = new SqlCommand(query, connection))
-            {
-                command.Parameters.AddWithValue("@nombre", nombre);
-                command.Parameters.AddWithValue("@apellido", apellido);
-                command.Parameters.AddWithValue("@calle", calle);
-                command.Parameters.AddWithValue("@numexterior", numexterior);
-                command.Parameters.AddWithValue("@telefono", telefono);
-                command.Parameters.AddWithValue("@correo", correo);
-                if (numinterior != null)
-                {
-                    command.Parameters.AddWithValue("@numinterior", numinterior);
-                }
-                else
-                {
-                    command.Parameters.AddWithValue("@numinterior", DBNull.Value);
-                }
-                if (rfc != null)
-                {
-                    command.Parameters.AddWithValue("@rfc", rfc);
-                }
-                else
-                {
-                    command.Parameters.AddWithValue("@rfc", DBNull.Value);
-                }
-
-                try
-                {
-                    // Abrir la conexión y ejecutar la consulta de inserción
-                    connection.Open();
-                    int filasAfectadas = command.ExecuteNonQuery();
-
-                    if (filasAfectadas > 0)
-                    {
-                        MessageBox.Show("Datos insertados correctamente.");
-                        Refrescar();
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se pudieron insertar los datos.");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al insertar datos: " + ex.Message);
-                }
-            }
-
-
-        }
-
-        private void btnEliminar_C_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnModificar_C_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBuscar_C_Click(object sender, EventArgs e)
-        {
-
-        }
         private void LimpiarCampos()
         {
             txtNombre.Text = string.Empty;
@@ -200,76 +137,6 @@ namespace LoginBakebooker
         {
 
 
-        }
-      
-        private void lbl_A_Paterno_C_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
-        {
-        }
-
-        private void Form2_VisibleChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
-        }
-
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //este boton es el de insertar empleado
-            string nombre = txtnombre_Emp.Text;
-            string puesto = txtPuesto_emp.Text;
-            string apellido = string.IsNullOrEmpty(txtapellido_emp.Text) ? null : txtapellido_emp.Text;
-           
-
-            string query = "INSERT INTO Empleado (Nombre,Apellido,Puesto) VALUES (@nombre,@apellido,@puesto)";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            using (SqlCommand command = new SqlCommand(query, connection))
-            {
-                command.Parameters.AddWithValue("@nombre", nombre);
-                command.Parameters.AddWithValue("@puesto", puesto);
-              
-                if (apellido != null)
-                {
-                    command.Parameters.AddWithValue("@apellido", apellido);
-                }
-                else
-                {
-                    command.Parameters.AddWithValue("@apellido", DBNull.Value);
-                }
-
-                try
-                {
-                    // Abrir la conexión y ejecutar la consulta de inserción
-                    connection.Open();
-                    int filasAfectadas = command.ExecuteNonQuery();
-
-                    if (filasAfectadas > 0)
-                    {
-                        MessageBox.Show("Datos insertados correctamente.");
-                        Refrescar();
-                        // Limpiar los TextBoxes o realizar otras acciones después de la inserción
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se pudieron insertar los datos.");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al insertar datos: " + ex.Message);
-                }
-            }
         }
 
         private void DgvGeneral_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -343,51 +210,46 @@ namespace LoginBakebooker
                     string rfc = string.IsNullOrEmpty(txtRfc_C.Text) ? null : txtRfc_C.Text;
                     int telefono = Convert.ToInt32(txtTelefono_C.Text);
                     string correo = txtCorreo_Electronico_C.Text;
-
-
-                    string query = "INSERT INTO Cliente (Nombre,Apellido,Calle,Numero_exterior,Numero_interior,Telefono,Correo_electronico,RFC) VALUES (@nombre,@apellido,@calle,@numexterior,@numinterior,@telefono,@correo,@rfc)";
-
                     using (SqlConnection connection = new SqlConnection(connectionString))
-                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@nombre", nombre);
-                        command.Parameters.AddWithValue("@apellido", apellido);
-                        command.Parameters.AddWithValue("@calle", calle);
-                        command.Parameters.AddWithValue("@numexterior", numexterior);
-                        command.Parameters.AddWithValue("@telefono", telefono);
-                        command.Parameters.AddWithValue("@correo", correo);
-                        if (numinterior != null)
-                        {
-                            command.Parameters.AddWithValue("@numinterior", numinterior);
-                        }
-                        else
-                        {
-                            command.Parameters.AddWithValue("@numinterior", DBNull.Value);
-                        }
-                        if (rfc != null)
-                        {
-                            command.Parameters.AddWithValue("@rfc", rfc);
-                        }
-                        else
-                        {
-                            command.Parameters.AddWithValue("@rfc", DBNull.Value);
-                        }
-
                         try
                         {
-                            // Abrir la conexión y ejecutar la consulta de inserción
+                            // Abrir la conexión
                             connection.Open();
-                            int filasAfectadas = command.ExecuteNonQuery();
-
-                            if (filasAfectadas > 0)
+                            // Crear el comando para el stored procedure
+                            using (SqlCommand cmd = new SqlCommand("sp_InsertarCliente", connection))
                             {
-                                MessageBox.Show("Datos insertados correctamente.");
-                                Refrescar();
+                                cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
-                            }
-                            else
-                            {
-                                MessageBox.Show("No se pudieron insertar los datos.");
+                                // Asignar parámetros al stored procedure
+                                cmd.Parameters.AddWithValue("@Nombre", nombre);
+                                cmd.Parameters.AddWithValue("@Apellido", apellido);
+                                cmd.Parameters.AddWithValue("@Calle", calle);
+                                cmd.Parameters.AddWithValue("@Numero_Exterior", numexterior);
+                                cmd.Parameters.AddWithValue("@Telefono", telefono);
+                                cmd.Parameters.AddWithValue("@Correo_electronico", correo);
+                                if (numinterior != null)
+                                {
+                                    cmd.Parameters.AddWithValue("@Numero_interior", numinterior);
+                                }
+                                    else
+                                    {
+                                        cmd.Parameters.AddWithValue("@Numero_interior", DBNull.Value);
+                                    }
+                                if (rfc != null)
+                                {
+                                    cmd.Parameters.AddWithValue("@RFC", rfc);
+                                }
+                                    else
+                                    {
+                                        cmd.Parameters.AddWithValue("@RFC", DBNull.Value);
+                                    }
+
+
+                                // Ejecutar el comando (stored procedure)
+                                cmd.ExecuteNonQuery();
+
+                                MessageBox.Show("Datos insertados correctamente en la tabla Cliente.");
                             }
                         }
                         catch (Exception ex)
@@ -395,7 +257,8 @@ namespace LoginBakebooker
                             MessageBox.Show("Error al insertar datos: " + ex.Message);
                         }
                     }
-                    break;
+
+                        break;
 
                 case 1: // TabPage 2
                         //este boton es el de insertar empleado
@@ -478,6 +341,75 @@ namespace LoginBakebooker
 
                     break;
             }
+            Refrescar();
+
+        }
+
+        private void btnEncargo_Click(object sender, EventArgs e)
+        {
+            tabcontrolPedido.SelectedIndex = 0; 
+        }
+
+        private void btnParaLlevar_Click(object sender, EventArgs e)
+        {
+            tabcontrolPedido.SelectedIndex = 1; 
+        }
+
+        private void tabPagePedidos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGeneralModificar_Click(object sender, EventArgs e)
+        {
+            string tabla=ObtenerNombreTabla();
+            string id=obtenerIDParaOrdenar();
+            string query = $"SELECT * FROM {tabla} ORDER BY {id} DESC"; // Utiliza el nombre de la tabla proporcionado
+            switch (tabControlBakeBooker.SelectedIndex)
+            {
+                case 0:
+                    try
+                    {                        
+                        SqlDataAdapter dataAdapter = new SqlDataAdapter(); // No se inicializa con el origen de datos en este punto
+                        DataTable dataTable = (DataTable)DgvGeneral.DataSource; // Obtiene el DataTable del origen de datos del DataGridView
+
+                        using (SqlCommand conexion = new SqlCommand(query, sqlConnection))
+                        {
+                            dataAdapter.SelectCommand = conexion;
+                            SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
+
+                            dataAdapter.UpdateCommand = commandBuilder.GetUpdateCommand();
+                            dataAdapter.InsertCommand = commandBuilder.GetInsertCommand();
+                            dataAdapter.DeleteCommand = commandBuilder.GetDeleteCommand();
+
+                            dataAdapter.Update(dataTable);
+
+                            MessageBox.Show("Datos modificados correctamente.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al modificar los datos: " + ex.Message);
+                    }
+                    break;
+                case 1:
+                    break;
+                   
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+
+                    break;
+                default:
+                    break;
+            }
+
         }
     }
 }

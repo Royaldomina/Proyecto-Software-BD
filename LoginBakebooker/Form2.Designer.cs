@@ -29,46 +29,61 @@
         private void InitializeComponent()
         {
             this.tabPageInventario = new System.Windows.Forms.TabPage();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
             this.tabPageDetallePedidos = new System.Windows.Forms.TabPage();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.tabPagePedidos = new System.Windows.Forms.TabPage();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabcontrolPedido = new System.Windows.Forms.TabControl();
+            this.Pedido = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.Producto = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnParaLlevar = new System.Windows.Forms.Button();
+            this.btnEncargo = new System.Windows.Forms.Button();
+            this.txtPedidos_Cliente = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtPedidos_Anticipo = new System.Windows.Forms.TextBox();
             this.tabPageProductos = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.DTPFecha_expiracion = new System.Windows.Forms.DateTimePicker();
+            this.DTPFecha_ingreso = new System.Windows.Forms.DateTimePicker();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.tabPageEmpleados = new System.Windows.Forms.TabPage();
+            this.radiobtnGeneral = new System.Windows.Forms.RadioButton();
+            this.radiobtnAdmin = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.txtapellido_emp = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtnombre_Emp = new System.Windows.Forms.TextBox();
-            this.btnBuscar_emp = new System.Windows.Forms.Button();
-            this.btnmodificar_emp = new System.Windows.Forms.Button();
-            this.btnEliminar_emp = new System.Windows.Forms.Button();
-            this.btnInsertar_emp = new System.Windows.Forms.Button();
             this.tabPageClientes = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNumINT_C = new System.Windows.Forms.TextBox();
-            this.btnBuscar_C = new System.Windows.Forms.Button();
             this.txtTelefono_C = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.lbl_A_Paterno_C = new System.Windows.Forms.Label();
-            this.btnModificar_C = new System.Windows.Forms.Button();
-            this.btnEliminar_C = new System.Windows.Forms.Button();
-            this.btnInsertar_C = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -80,21 +95,16 @@
             this.txtRfc_C = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.tabControlBakeBooker = new System.Windows.Forms.TabControl();
+            this.tabPageProductoPedido = new System.Windows.Forms.TabPage();
             this.DgvGeneral = new System.Windows.Forms.DataGridView();
             this.btnGeneralBuscar = new System.Windows.Forms.Button();
             this.btnGeneralModificar = new System.Windows.Forms.Button();
             this.btnGeneralEliminar = new System.Windows.Forms.Button();
             this.btnGeneralInsertar = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.radiobtnAdmin = new System.Windows.Forms.RadioButton();
-            this.radiobtnGeneral = new System.Windows.Forms.RadioButton();
-            this.tabPageInventario.SuspendLayout();
-            this.tabPageDetallePedidos.SuspendLayout();
             this.tabPagePedidos.SuspendLayout();
+            this.tabcontrolPedido.SuspendLayout();
+            this.Pedido.SuspendLayout();
+            this.Producto.SuspendLayout();
             this.tabPageProductos.SuspendLayout();
             this.tabPageEmpleados.SuspendLayout();
             this.tabPageClientes.SuspendLayout();
@@ -104,223 +114,385 @@
             // 
             // tabPageInventario
             // 
-            this.tabPageInventario.Controls.Add(this.button17);
-            this.tabPageInventario.Controls.Add(this.button18);
-            this.tabPageInventario.Controls.Add(this.button19);
-            this.tabPageInventario.Controls.Add(this.button20);
             this.tabPageInventario.Location = new System.Drawing.Point(4, 22);
             this.tabPageInventario.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageInventario.Name = "tabPageInventario";
             this.tabPageInventario.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageInventario.Size = new System.Drawing.Size(532, 188);
+            this.tabPageInventario.Size = new System.Drawing.Size(545, 188);
             this.tabPageInventario.TabIndex = 6;
             this.tabPageInventario.Text = "Inventario";
             this.tabPageInventario.UseVisualStyleBackColor = true;
             // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(640, 120);
-            this.button17.Margin = new System.Windows.Forms.Padding(2);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 28);
-            this.button17.TabIndex = 12;
-            this.button17.Text = "Buscar";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(540, 120);
-            this.button18.Margin = new System.Windows.Forms.Padding(2);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 28);
-            this.button18.TabIndex = 11;
-            this.button18.Text = "Modificar";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.Location = new System.Drawing.Point(640, 70);
-            this.button19.Margin = new System.Windows.Forms.Padding(2);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 27);
-            this.button19.TabIndex = 10;
-            this.button19.Text = "Eliminar";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(540, 70);
-            this.button20.Margin = new System.Windows.Forms.Padding(2);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 27);
-            this.button20.TabIndex = 9;
-            this.button20.Text = "Insertar";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
             // tabPageDetallePedidos
             // 
-            this.tabPageDetallePedidos.Controls.Add(this.button13);
-            this.tabPageDetallePedidos.Controls.Add(this.button14);
-            this.tabPageDetallePedidos.Controls.Add(this.button15);
-            this.tabPageDetallePedidos.Controls.Add(this.button16);
             this.tabPageDetallePedidos.Location = new System.Drawing.Point(4, 22);
             this.tabPageDetallePedidos.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageDetallePedidos.Name = "tabPageDetallePedidos";
             this.tabPageDetallePedidos.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageDetallePedidos.Size = new System.Drawing.Size(532, 188);
+            this.tabPageDetallePedidos.Size = new System.Drawing.Size(545, 188);
             this.tabPageDetallePedidos.TabIndex = 5;
-            this.tabPageDetallePedidos.Text = "Detalle Pedidos";
+            this.tabPageDetallePedidos.Text = "Detalle Pedido";
             this.tabPageDetallePedidos.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(628, 118);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 28);
-            this.button13.TabIndex = 12;
-            this.button13.Text = "Buscar";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(528, 118);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 28);
-            this.button14.TabIndex = 11;
-            this.button14.Text = "Modificar";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(628, 68);
-            this.button15.Margin = new System.Windows.Forms.Padding(2);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 27);
-            this.button15.TabIndex = 10;
-            this.button15.Text = "Eliminar";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(528, 68);
-            this.button16.Margin = new System.Windows.Forms.Padding(2);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 27);
-            this.button16.TabIndex = 9;
-            this.button16.Text = "Insertar";
-            this.button16.UseVisualStyleBackColor = true;
             // 
             // tabPagePedidos
             // 
-            this.tabPagePedidos.Controls.Add(this.button9);
-            this.tabPagePedidos.Controls.Add(this.button10);
-            this.tabPagePedidos.Controls.Add(this.button11);
-            this.tabPagePedidos.Controls.Add(this.button12);
+            this.tabPagePedidos.Controls.Add(this.button3);
+            this.tabPagePedidos.Controls.Add(this.button1);
+            this.tabPagePedidos.Controls.Add(this.tabcontrolPedido);
+            this.tabPagePedidos.Controls.Add(this.btnParaLlevar);
+            this.tabPagePedidos.Controls.Add(this.btnEncargo);
+            this.tabPagePedidos.Controls.Add(this.txtPedidos_Cliente);
+            this.tabPagePedidos.Controls.Add(this.label20);
+            this.tabPagePedidos.Controls.Add(this.label21);
+            this.tabPagePedidos.Controls.Add(this.label22);
+            this.tabPagePedidos.Controls.Add(this.txtPedidos_Anticipo);
             this.tabPagePedidos.Location = new System.Drawing.Point(4, 22);
             this.tabPagePedidos.Margin = new System.Windows.Forms.Padding(2);
             this.tabPagePedidos.Name = "tabPagePedidos";
             this.tabPagePedidos.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPagePedidos.Size = new System.Drawing.Size(532, 188);
+            this.tabPagePedidos.Size = new System.Drawing.Size(545, 188);
             this.tabPagePedidos.TabIndex = 4;
-            this.tabPagePedidos.Text = "Pedidos";
+            this.tabPagePedidos.Text = "Pedido";
             this.tabPagePedidos.UseVisualStyleBackColor = true;
+            this.tabPagePedidos.Click += new System.EventHandler(this.tabPagePedidos_Click);
             // 
-            // button9
+            // button3
             // 
-            this.button9.Location = new System.Drawing.Point(630, 111);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 28);
-            this.button9.TabIndex = 12;
-            this.button9.Text = "Buscar";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(64, 113);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(99, 28);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "iniciar pedido";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // button1
             // 
-            this.button10.Location = new System.Drawing.Point(530, 111);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 28);
-            this.button10.TabIndex = 11;
-            this.button10.Text = "Modificar";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(88, 54);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 28);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // tabcontrolPedido
             // 
-            this.button11.Location = new System.Drawing.Point(630, 61);
-            this.button11.Margin = new System.Windows.Forms.Padding(2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 27);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "Eliminar";
-            this.button11.UseVisualStyleBackColor = true;
+            this.tabcontrolPedido.Controls.Add(this.Pedido);
+            this.tabcontrolPedido.Controls.Add(this.Producto);
+            this.tabcontrolPedido.ItemSize = new System.Drawing.Size(0, 15);
+            this.tabcontrolPedido.Location = new System.Drawing.Point(206, 5);
+            this.tabcontrolPedido.Name = "tabcontrolPedido";
+            this.tabcontrolPedido.SelectedIndex = 0;
+            this.tabcontrolPedido.Size = new System.Drawing.Size(334, 178);
+            this.tabcontrolPedido.TabIndex = 23;
             // 
-            // button12
+            // Pedido
             // 
-            this.button12.Location = new System.Drawing.Point(530, 61);
-            this.button12.Margin = new System.Windows.Forms.Padding(2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 27);
-            this.button12.TabIndex = 9;
-            this.button12.Text = "Insertar";
-            this.button12.UseVisualStyleBackColor = true;
+            this.Pedido.Controls.Add(this.comboBox1);
+            this.Pedido.Controls.Add(this.button2);
+            this.Pedido.Controls.Add(this.label24);
+            this.Pedido.Controls.Add(this.textBox9);
+            this.Pedido.Controls.Add(this.textBox3);
+            this.Pedido.Controls.Add(this.label19);
+            this.Pedido.Controls.Add(this.label23);
+            this.Pedido.Controls.Add(this.textBox7);
+            this.Pedido.Location = new System.Drawing.Point(4, 19);
+            this.Pedido.Name = "Pedido";
+            this.Pedido.Padding = new System.Windows.Forms.Padding(3);
+            this.Pedido.Size = new System.Drawing.Size(326, 155);
+            this.Pedido.TabIndex = 0;
+            this.Pedido.Text = "Pedido";
+            this.Pedido.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(145, 30);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 27;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(246, 122);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 28);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "Buscar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(10, 110);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(60, 13);
+            this.label24.TabIndex = 25;
+            this.label24.Text = "ANTICIPO:";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(8, 130);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(113, 20);
+            this.textBox9.TabIndex = 24;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(10, 30);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(112, 20);
+            this.textBox3.TabIndex = 20;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(10, 10);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(58, 13);
+            this.label19.TabIndex = 22;
+            this.label19.Text = "CLIENTE: ";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(10, 60);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(60, 13);
+            this.label23.TabIndex = 23;
+            this.label23.Text = "ANTICIPO:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(8, 80);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(113, 20);
+            this.textBox7.TabIndex = 21;
+            // 
+            // Producto
+            // 
+            this.Producto.Controls.Add(this.button4);
+            this.Producto.Location = new System.Drawing.Point(4, 19);
+            this.Producto.Name = "Producto";
+            this.Producto.Padding = new System.Windows.Forms.Padding(3);
+            this.Producto.Size = new System.Drawing.Size(326, 155);
+            this.Producto.TabIndex = 1;
+            this.Producto.Text = "Producto";
+            this.Producto.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(234, 102);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(87, 47);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "para agregar en pedido y produycto";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // btnParaLlevar
+            // 
+            this.btnParaLlevar.Location = new System.Drawing.Point(126, 145);
+            this.btnParaLlevar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnParaLlevar.Name = "btnParaLlevar";
+            this.btnParaLlevar.Size = new System.Drawing.Size(75, 28);
+            this.btnParaLlevar.TabIndex = 22;
+            this.btnParaLlevar.Text = "Para llevar";
+            this.btnParaLlevar.UseVisualStyleBackColor = true;
+            this.btnParaLlevar.Click += new System.EventHandler(this.btnParaLlevar_Click);
+            // 
+            // btnEncargo
+            // 
+            this.btnEncargo.Location = new System.Drawing.Point(14, 146);
+            this.btnEncargo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEncargo.Name = "btnEncargo";
+            this.btnEncargo.Size = new System.Drawing.Size(75, 27);
+            this.btnEncargo.TabIndex = 21;
+            this.btnEncargo.Text = "Encargo";
+            this.btnEncargo.UseVisualStyleBackColor = true;
+            this.btnEncargo.Click += new System.EventHandler(this.btnEncargo_Click);
+            // 
+            // txtPedidos_Cliente
+            // 
+            this.txtPedidos_Cliente.Location = new System.Drawing.Point(89, 29);
+            this.txtPedidos_Cliente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPedidos_Cliente.Name = "txtPedidos_Cliente";
+            this.txtPedidos_Cliente.Size = new System.Drawing.Size(112, 20);
+            this.txtPedidos_Cliente.TabIndex = 14;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(11, 41);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(58, 13);
+            this.label20.TabIndex = 18;
+            this.label20.Text = "CLIENTE: ";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(11, 88);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(60, 13);
+            this.label21.TabIndex = 19;
+            this.label21.Text = "ANTICIPO:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(6, 27);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(0, 13);
+            this.label22.TabIndex = 20;
+            // 
+            // txtPedidos_Anticipo
+            // 
+            this.txtPedidos_Anticipo.Location = new System.Drawing.Point(88, 81);
+            this.txtPedidos_Anticipo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPedidos_Anticipo.Name = "txtPedidos_Anticipo";
+            this.txtPedidos_Anticipo.Size = new System.Drawing.Size(113, 20);
+            this.txtPedidos_Anticipo.TabIndex = 15;
             // 
             // tabPageProductos
             // 
-            this.tabPageProductos.Controls.Add(this.button5);
-            this.tabPageProductos.Controls.Add(this.button6);
-            this.tabPageProductos.Controls.Add(this.button7);
-            this.tabPageProductos.Controls.Add(this.button8);
+            this.tabPageProductos.Controls.Add(this.DTPFecha_expiracion);
+            this.tabPageProductos.Controls.Add(this.DTPFecha_ingreso);
+            this.tabPageProductos.Controls.Add(this.label17);
+            this.tabPageProductos.Controls.Add(this.label18);
+            this.tabPageProductos.Controls.Add(this.textBox8);
+            this.tabPageProductos.Controls.Add(this.label13);
+            this.tabPageProductos.Controls.Add(this.textBox4);
+            this.tabPageProductos.Controls.Add(this.label14);
+            this.tabPageProductos.Controls.Add(this.label15);
+            this.tabPageProductos.Controls.Add(this.label16);
+            this.tabPageProductos.Controls.Add(this.textBox5);
+            this.tabPageProductos.Controls.Add(this.textBox6);
             this.tabPageProductos.Location = new System.Drawing.Point(4, 22);
             this.tabPageProductos.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageProductos.Name = "tabPageProductos";
             this.tabPageProductos.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageProductos.Size = new System.Drawing.Size(532, 188);
+            this.tabPageProductos.Size = new System.Drawing.Size(545, 188);
             this.tabPageProductos.TabIndex = 2;
-            this.tabPageProductos.Text = "Productos";
+            this.tabPageProductos.Text = "Producto";
             this.tabPageProductos.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // DTPFecha_expiracion
             // 
-            this.button5.Location = new System.Drawing.Point(642, 112);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 28);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Buscar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.DTPFecha_expiracion.Location = new System.Drawing.Point(291, 146);
+            this.DTPFecha_expiracion.Name = "DTPFecha_expiracion";
+            this.DTPFecha_expiracion.Size = new System.Drawing.Size(200, 20);
+            this.DTPFecha_expiracion.TabIndex = 26;
             // 
-            // button6
+            // DTPFecha_ingreso
             // 
-            this.button6.Location = new System.Drawing.Point(542, 112);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 28);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Modificar";
-            this.button6.UseVisualStyleBackColor = true;
+            this.DTPFecha_ingreso.Location = new System.Drawing.Point(291, 52);
+            this.DTPFecha_ingreso.Name = "DTPFecha_ingreso";
+            this.DTPFecha_ingreso.Size = new System.Drawing.Size(200, 20);
+            this.DTPFecha_ingreso.TabIndex = 25;
             // 
-            // button7
+            // label17
             // 
-            this.button7.Location = new System.Drawing.Point(642, 62);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 27);
-            this.button7.TabIndex = 10;
-            this.button7.Text = "Eliminar";
-            this.button7.UseVisualStyleBackColor = true;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(288, 112);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(110, 13);
+            this.label17.TabIndex = 23;
+            this.label17.Text = "FECHA EXPIRACION";
             // 
-            // button8
+            // label18
             // 
-            this.button8.Location = new System.Drawing.Point(542, 62);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 27);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "Insertar";
-            this.button8.UseVisualStyleBackColor = true;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 149);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(65, 13);
+            this.label18.TabIndex = 24;
+            this.label18.Text = "CANTIDAD:";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(83, 149);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(188, 20);
+            this.textBox8.TabIndex = 22;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(288, 18);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(94, 13);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "FECHA INGRESO";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(84, 52);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(188, 20);
+            this.textBox4.TabIndex = 14;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 64);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(80, 13);
+            this.label14.TabIndex = 18;
+            this.label14.Text = "DESCRIPCION";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 111);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(50, 13);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "PRECIO:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 22);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(57, 13);
+            this.label16.TabIndex = 20;
+            this.label16.Text = "NOMBRE:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(83, 104);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(188, 20);
+            this.textBox5.TabIndex = 15;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(83, 15);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(188, 20);
+            this.textBox6.TabIndex = 16;
             // 
             // tabPageEmpleados
             // 
@@ -335,19 +507,72 @@
             this.tabPageEmpleados.Controls.Add(this.label10);
             this.tabPageEmpleados.Controls.Add(this.label11);
             this.tabPageEmpleados.Controls.Add(this.txtnombre_Emp);
-            this.tabPageEmpleados.Controls.Add(this.btnBuscar_emp);
-            this.tabPageEmpleados.Controls.Add(this.btnmodificar_emp);
-            this.tabPageEmpleados.Controls.Add(this.btnEliminar_emp);
-            this.tabPageEmpleados.Controls.Add(this.btnInsertar_emp);
-            this.tabPageEmpleados.Controls.Add(this.menuStrip1);
             this.tabPageEmpleados.Location = new System.Drawing.Point(4, 22);
             this.tabPageEmpleados.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageEmpleados.Name = "tabPageEmpleados";
             this.tabPageEmpleados.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageEmpleados.Size = new System.Drawing.Size(532, 188);
+            this.tabPageEmpleados.Size = new System.Drawing.Size(545, 188);
             this.tabPageEmpleados.TabIndex = 1;
-            this.tabPageEmpleados.Text = "Empleados";
+            this.tabPageEmpleados.Text = "Empleado";
             this.tabPageEmpleados.UseVisualStyleBackColor = true;
+            // 
+            // radiobtnGeneral
+            // 
+            this.radiobtnGeneral.AutoSize = true;
+            this.radiobtnGeneral.Location = new System.Drawing.Point(92, 151);
+            this.radiobtnGeneral.Name = "radiobtnGeneral";
+            this.radiobtnGeneral.Size = new System.Drawing.Size(62, 17);
+            this.radiobtnGeneral.TabIndex = 27;
+            this.radiobtnGeneral.TabStop = true;
+            this.radiobtnGeneral.Text = "General";
+            this.radiobtnGeneral.UseVisualStyleBackColor = true;
+            // 
+            // radiobtnAdmin
+            // 
+            this.radiobtnAdmin.AutoSize = true;
+            this.radiobtnAdmin.Location = new System.Drawing.Point(92, 118);
+            this.radiobtnAdmin.Name = "radiobtnAdmin";
+            this.radiobtnAdmin.Size = new System.Drawing.Size(88, 17);
+            this.radiobtnAdmin.TabIndex = 26;
+            this.radiobtnAdmin.TabStop = true;
+            this.radiobtnAdmin.Text = "Administrador";
+            this.radiobtnAdmin.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(302, 76);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 13);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "CONTRASEÑA:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(302, 31);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(59, 13);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "USUARIO:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(390, 73);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(129, 20);
+            this.textBox1.TabIndex = 21;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(390, 28);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(129, 20);
+            this.textBox2.TabIndex = 22;
             // 
             // txtapellido_emp
             // 
@@ -395,59 +620,14 @@
             this.txtnombre_Emp.Size = new System.Drawing.Size(188, 20);
             this.txtnombre_Emp.TabIndex = 16;
             // 
-            // btnBuscar_emp
-            // 
-            this.btnBuscar_emp.Location = new System.Drawing.Point(642, 105);
-            this.btnBuscar_emp.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBuscar_emp.Name = "btnBuscar_emp";
-            this.btnBuscar_emp.Size = new System.Drawing.Size(75, 28);
-            this.btnBuscar_emp.TabIndex = 12;
-            this.btnBuscar_emp.Text = "Buscar";
-            this.btnBuscar_emp.UseVisualStyleBackColor = true;
-            // 
-            // btnmodificar_emp
-            // 
-            this.btnmodificar_emp.Location = new System.Drawing.Point(542, 105);
-            this.btnmodificar_emp.Margin = new System.Windows.Forms.Padding(2);
-            this.btnmodificar_emp.Name = "btnmodificar_emp";
-            this.btnmodificar_emp.Size = new System.Drawing.Size(75, 28);
-            this.btnmodificar_emp.TabIndex = 11;
-            this.btnmodificar_emp.Text = "Modificar";
-            this.btnmodificar_emp.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminar_emp
-            // 
-            this.btnEliminar_emp.Location = new System.Drawing.Point(642, 55);
-            this.btnEliminar_emp.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEliminar_emp.Name = "btnEliminar_emp";
-            this.btnEliminar_emp.Size = new System.Drawing.Size(75, 27);
-            this.btnEliminar_emp.TabIndex = 10;
-            this.btnEliminar_emp.Text = "Eliminar";
-            this.btnEliminar_emp.UseVisualStyleBackColor = true;
-            // 
-            // btnInsertar_emp
-            // 
-            this.btnInsertar_emp.Location = new System.Drawing.Point(542, 55);
-            this.btnInsertar_emp.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInsertar_emp.Name = "btnInsertar_emp";
-            this.btnInsertar_emp.Size = new System.Drawing.Size(75, 27);
-            this.btnInsertar_emp.TabIndex = 9;
-            this.btnInsertar_emp.Text = "Insertar";
-            this.btnInsertar_emp.UseVisualStyleBackColor = true;
-            this.btnInsertar_emp.Click += new System.EventHandler(this.button4_Click);
-            // 
             // tabPageClientes
             // 
             this.tabPageClientes.Controls.Add(this.label2);
             this.tabPageClientes.Controls.Add(this.txtNumINT_C);
-            this.tabPageClientes.Controls.Add(this.btnBuscar_C);
             this.tabPageClientes.Controls.Add(this.txtTelefono_C);
             this.tabPageClientes.Controls.Add(this.label4);
             this.tabPageClientes.Controls.Add(this.txtApellido);
             this.tabPageClientes.Controls.Add(this.lbl_A_Paterno_C);
-            this.tabPageClientes.Controls.Add(this.btnModificar_C);
-            this.tabPageClientes.Controls.Add(this.btnEliminar_C);
-            this.tabPageClientes.Controls.Add(this.btnInsertar_C);
             this.tabPageClientes.Controls.Add(this.label7);
             this.tabPageClientes.Controls.Add(this.label6);
             this.tabPageClientes.Controls.Add(this.label5);
@@ -462,9 +642,9 @@
             this.tabPageClientes.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageClientes.Name = "tabPageClientes";
             this.tabPageClientes.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageClientes.Size = new System.Drawing.Size(532, 188);
+            this.tabPageClientes.Size = new System.Drawing.Size(545, 188);
             this.tabPageClientes.TabIndex = 0;
-            this.tabPageClientes.Text = "Clientes";
+            this.tabPageClientes.Text = "Cliente";
             this.tabPageClientes.UseVisualStyleBackColor = true;
             // 
             // label2
@@ -484,17 +664,6 @@
             this.txtNumINT_C.Name = "txtNumINT_C";
             this.txtNumINT_C.Size = new System.Drawing.Size(154, 20);
             this.txtNumINT_C.TabIndex = 9;
-            // 
-            // btnBuscar_C
-            // 
-            this.btnBuscar_C.Location = new System.Drawing.Point(650, 100);
-            this.btnBuscar_C.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBuscar_C.Name = "btnBuscar_C";
-            this.btnBuscar_C.Size = new System.Drawing.Size(75, 28);
-            this.btnBuscar_C.TabIndex = 8;
-            this.btnBuscar_C.Text = "Buscar";
-            this.btnBuscar_C.UseVisualStyleBackColor = true;
-            this.btnBuscar_C.Click += new System.EventHandler(this.btnBuscar_C_Click);
             // 
             // txtTelefono_C
             // 
@@ -531,40 +700,6 @@
             this.lbl_A_Paterno_C.Size = new System.Drawing.Size(59, 13);
             this.lbl_A_Paterno_C.TabIndex = 3;
             this.lbl_A_Paterno_C.Text = "APELLIDO";
-            this.lbl_A_Paterno_C.Click += new System.EventHandler(this.lbl_A_Paterno_C_Click);
-            // 
-            // btnModificar_C
-            // 
-            this.btnModificar_C.Location = new System.Drawing.Point(550, 100);
-            this.btnModificar_C.Margin = new System.Windows.Forms.Padding(2);
-            this.btnModificar_C.Name = "btnModificar_C";
-            this.btnModificar_C.Size = new System.Drawing.Size(75, 28);
-            this.btnModificar_C.TabIndex = 7;
-            this.btnModificar_C.Text = "Modificar";
-            this.btnModificar_C.UseVisualStyleBackColor = true;
-            this.btnModificar_C.Click += new System.EventHandler(this.btnModificar_C_Click);
-            // 
-            // btnEliminar_C
-            // 
-            this.btnEliminar_C.Location = new System.Drawing.Point(650, 50);
-            this.btnEliminar_C.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEliminar_C.Name = "btnEliminar_C";
-            this.btnEliminar_C.Size = new System.Drawing.Size(75, 27);
-            this.btnEliminar_C.TabIndex = 6;
-            this.btnEliminar_C.Text = "Eliminar";
-            this.btnEliminar_C.UseVisualStyleBackColor = true;
-            this.btnEliminar_C.Click += new System.EventHandler(this.btnEliminar_C_Click);
-            // 
-            // btnInsertar_C
-            // 
-            this.btnInsertar_C.Location = new System.Drawing.Point(550, 50);
-            this.btnInsertar_C.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInsertar_C.Name = "btnInsertar_C";
-            this.btnInsertar_C.Size = new System.Drawing.Size(75, 27);
-            this.btnInsertar_C.TabIndex = 5;
-            this.btnInsertar_C.Text = "Insertar";
-            this.btnInsertar_C.UseVisualStyleBackColor = true;
-            this.btnInsertar_C.Click += new System.EventHandler(this.btnInsertar_C_Click);
             // 
             // label7
             // 
@@ -659,18 +794,28 @@
             // tabControlBakeBooker
             // 
             this.tabControlBakeBooker.Controls.Add(this.tabPageClientes);
-            this.tabControlBakeBooker.Controls.Add(this.tabPageEmpleados);
-            this.tabControlBakeBooker.Controls.Add(this.tabPageProductos);
             this.tabControlBakeBooker.Controls.Add(this.tabPagePedidos);
             this.tabControlBakeBooker.Controls.Add(this.tabPageDetallePedidos);
+            this.tabControlBakeBooker.Controls.Add(this.tabPageProductos);
+            this.tabControlBakeBooker.Controls.Add(this.tabPageProductoPedido);
             this.tabControlBakeBooker.Controls.Add(this.tabPageInventario);
+            this.tabControlBakeBooker.Controls.Add(this.tabPageEmpleados);
             this.tabControlBakeBooker.Location = new System.Drawing.Point(1, 3);
             this.tabControlBakeBooker.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlBakeBooker.Name = "tabControlBakeBooker";
             this.tabControlBakeBooker.SelectedIndex = 0;
-            this.tabControlBakeBooker.Size = new System.Drawing.Size(540, 214);
+            this.tabControlBakeBooker.Size = new System.Drawing.Size(553, 214);
             this.tabControlBakeBooker.TabIndex = 0;
             this.tabControlBakeBooker.SelectedIndexChanged += new System.EventHandler(this.tabControlBakeBooker_SelectedIndexChanged);
+            // 
+            // tabPageProductoPedido
+            // 
+            this.tabPageProductoPedido.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProductoPedido.Name = "tabPageProductoPedido";
+            this.tabPageProductoPedido.Size = new System.Drawing.Size(545, 188);
+            this.tabPageProductoPedido.TabIndex = 7;
+            this.tabPageProductoPedido.Text = "Detalle Producto";
+            this.tabPageProductoPedido.UseVisualStyleBackColor = true;
             // 
             // DgvGeneral
             // 
@@ -683,7 +828,7 @@
             // 
             // btnGeneralBuscar
             // 
-            this.btnGeneralBuscar.Location = new System.Drawing.Point(679, 138);
+            this.btnGeneralBuscar.Location = new System.Drawing.Point(658, 116);
             this.btnGeneralBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGeneralBuscar.Name = "btnGeneralBuscar";
             this.btnGeneralBuscar.Size = new System.Drawing.Size(75, 28);
@@ -693,17 +838,18 @@
             // 
             // btnGeneralModificar
             // 
-            this.btnGeneralModificar.Location = new System.Drawing.Point(579, 138);
+            this.btnGeneralModificar.Location = new System.Drawing.Point(558, 116);
             this.btnGeneralModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGeneralModificar.Name = "btnGeneralModificar";
             this.btnGeneralModificar.Size = new System.Drawing.Size(75, 28);
             this.btnGeneralModificar.TabIndex = 11;
             this.btnGeneralModificar.Text = "Modificar";
             this.btnGeneralModificar.UseVisualStyleBackColor = true;
+            this.btnGeneralModificar.Click += new System.EventHandler(this.btnGeneralModificar_Click);
             // 
             // btnGeneralEliminar
             // 
-            this.btnGeneralEliminar.Location = new System.Drawing.Point(679, 88);
+            this.btnGeneralEliminar.Location = new System.Drawing.Point(658, 66);
             this.btnGeneralEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGeneralEliminar.Name = "btnGeneralEliminar";
             this.btnGeneralEliminar.Size = new System.Drawing.Size(75, 27);
@@ -713,7 +859,7 @@
             // 
             // btnGeneralInsertar
             // 
-            this.btnGeneralInsertar.Location = new System.Drawing.Point(579, 88);
+            this.btnGeneralInsertar.Location = new System.Drawing.Point(558, 66);
             this.btnGeneralInsertar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGeneralInsertar.Name = "btnGeneralInsertar";
             this.btnGeneralInsertar.Size = new System.Drawing.Size(75, 27);
@@ -721,72 +867,6 @@
             this.btnGeneralInsertar.Text = "Insertar";
             this.btnGeneralInsertar.UseVisualStyleBackColor = true;
             this.btnGeneralInsertar.Click += new System.EventHandler(this.btnGeneralInsertar_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(302, 76);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 13);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "CONTRASEÑA:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(302, 31);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(59, 13);
-            this.label12.TabIndex = 24;
-            this.label12.Text = "USUARIO:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(390, 66);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 20);
-            this.textBox1.TabIndex = 21;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(390, 24);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 20);
-            this.textBox2.TabIndex = 22;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Location = new System.Drawing.Point(2, 2);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(528, 24);
-            this.menuStrip1.TabIndex = 25;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // radiobtnAdmin
-            // 
-            this.radiobtnAdmin.AutoSize = true;
-            this.radiobtnAdmin.Location = new System.Drawing.Point(92, 118);
-            this.radiobtnAdmin.Name = "radiobtnAdmin";
-            this.radiobtnAdmin.Size = new System.Drawing.Size(88, 17);
-            this.radiobtnAdmin.TabIndex = 26;
-            this.radiobtnAdmin.TabStop = true;
-            this.radiobtnAdmin.Text = "Administrador";
-            this.radiobtnAdmin.UseVisualStyleBackColor = true;
-            // 
-            // radiobtnGeneral
-            // 
-            this.radiobtnGeneral.AutoSize = true;
-            this.radiobtnGeneral.Location = new System.Drawing.Point(92, 151);
-            this.radiobtnGeneral.Name = "radiobtnGeneral";
-            this.radiobtnGeneral.Size = new System.Drawing.Size(62, 17);
-            this.radiobtnGeneral.TabIndex = 27;
-            this.radiobtnGeneral.TabStop = true;
-            this.radiobtnGeneral.Text = "General";
-            this.radiobtnGeneral.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -799,19 +879,19 @@
             this.Controls.Add(this.btnGeneralInsertar);
             this.Controls.Add(this.DgvGeneral);
             this.Controls.Add(this.tabControlBakeBooker);
-            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.VisibleChanged += new System.EventHandler(this.Form2_VisibleChanged);
-            this.tabPageInventario.ResumeLayout(false);
-            this.tabPageDetallePedidos.ResumeLayout(false);
             this.tabPagePedidos.ResumeLayout(false);
+            this.tabPagePedidos.PerformLayout();
+            this.tabcontrolPedido.ResumeLayout(false);
+            this.Pedido.ResumeLayout(false);
+            this.Pedido.PerformLayout();
+            this.Producto.ResumeLayout(false);
             this.tabPageProductos.ResumeLayout(false);
+            this.tabPageProductos.PerformLayout();
             this.tabPageEmpleados.ResumeLayout(false);
             this.tabPageEmpleados.PerformLayout();
             this.tabPageClientes.ResumeLayout(false);
@@ -830,10 +910,6 @@
         private System.Windows.Forms.TabPage tabPageProductos;
         private System.Windows.Forms.TabPage tabPageEmpleados;
         private System.Windows.Forms.TabPage tabPageClientes;
-        private System.Windows.Forms.Button btnBuscar_C;
-        private System.Windows.Forms.Button btnModificar_C;
-        private System.Windows.Forms.Button btnEliminar_C;
-        private System.Windows.Forms.Button btnInsertar_C;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -851,26 +927,6 @@
         private System.Windows.Forms.TabControl tabControlBakeBooker;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNumINT_C;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button btnBuscar_emp;
-        private System.Windows.Forms.Button btnmodificar_emp;
-        private System.Windows.Forms.Button btnEliminar_emp;
-        private System.Windows.Forms.Button btnInsertar_emp;
         private System.Windows.Forms.TextBox txtapellido_emp;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -885,8 +941,41 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.RadioButton radiobtnGeneral;
         private System.Windows.Forms.RadioButton radiobtnAdmin;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtPedidos_Cliente;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtPedidos_Anticipo;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TabPage tabPageProductoPedido;
+        private System.Windows.Forms.Button btnParaLlevar;
+        private System.Windows.Forms.Button btnEncargo;
+        private System.Windows.Forms.TabControl tabcontrolPedido;
+        private System.Windows.Forms.TabPage Pedido;
+        private System.Windows.Forms.TabPage Producto;
+        private System.Windows.Forms.DateTimePicker DTPFecha_expiracion;
+        private System.Windows.Forms.DateTimePicker DTPFecha_ingreso;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button4;
     }
 }
